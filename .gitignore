@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------
+# Secrets and local configuration (never commit)
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials*.json
+local_config.py
+*.local.*
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test / tool caches and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ---------------------------------------------------------------
+# PySide6 / Qt generated files
+# ---------------------------------------------------------------
+*.qmlc
+*.jsc
+.qmlls.ini
+*.pyproject.user
+
+# ---------------------------------------------------------------
+# Run output: per-run screenshots and logs contain raw images of the
+# desktop (open apps, chats, file paths). Never commit them.
+# ---------------------------------------------------------------
+runs/
+scratch/
+*.log
+
+# Generated evaluation data (trial records, auto CSVs, filled-in sheets). Archive it
+# outside the project (eval/EXPERIMENT_CHECKLIST.md); eval/templates/ stays tracked.
+eval/results/
+
+# Voice test recordings
+*.wav
+
+# ---------------------------------------------------------------
+# Editors / IDEs / tools
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.claude/
+
+# ---------------------------------------------------------------
+# Windows / macOS
+# ---------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+
+# Release archives
+*.zip
